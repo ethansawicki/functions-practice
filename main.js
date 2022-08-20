@@ -32,10 +32,14 @@ const finalFiring = (pottery, temp) => {
     }
 }
 
-const clay = buyClay()
-const pottery = makePottery(clay)
-const bisque = bisqueFire(pottery)
-const glaze = glazePottery(bisque)
-const finalProduct = finalFiring(glaze, 1200)
+const firePottery = () => {
+    const clay = buyClay()
+    const pottery = makePottery(clay)
+    const bisque = bisqueFire(pottery)
+    const glaze = glazePottery(bisque)
+    const finalProduct = finalFiring(glaze, 1200)
+    return finalProduct
+}
 
-console.log(finalProduct)
+
+console.log(firePottery())
